@@ -1,0 +1,14 @@
+<div class="container">
+  <div class="content">
+    <div class="title">Users</div>
+    <ng-container *ngFor="let user of users">
+      <div class="user">
+        {{ user.username }}
+        <ng-container *ngFor="let role of user.roles">
+          <span class="role-badge role-user" *ngIf="role === 'USER'">USER</span>
+          <span class="role-badge role-admin" *ngIf="role === 'ADMIN'">ADMIN</span>
+        </ng-container>
+      </div>
+    </ng-container>
+  </div>
+</div>

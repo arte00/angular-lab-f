@@ -1,0 +1,42 @@
+.header {
+  background-color: #023e8a;
+  color: white;
+  padding: 1.6rem;
+}
+
+.title {
+  padding-bottom: 1.2rem;
+}
+
+.title a {
+  color: white;
+  font-size: 1.8rem;
+  text-decoration: none;
+}
+
+.navigation {
+  display: flex;
+  flex-direction: row;
+  column-gap: 1.6rem;
+}
+
+.navigation a {
+  color: white;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+.router-outlet {
+
+}
+
+footer {
+  background-color: #023e8a;
+  color: white;
+  padding: 1.2rem;
+}
+
+.logout {
+  padding: 0 1rem 0;
+  text-decoration: underline
+}

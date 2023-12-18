@@ -1,0 +1,26 @@
+<div class="container">
+    <div class="login-box">
+      <div class="login">Login</div>
+      <form [formGroup]="form">
+        <div class="form-control">
+          <label>Username</label>
+          <input type="text" placeholder="Username" formControlName="username"/>
+        </div>
+        <div class="form-control">
+          <label>Password</label>
+          <input type="password" placeholder="Password" formControlName="password"
+          />
+        </div>
+        <div class="submit-button">
+          <button type="submit" (click)="loginSubmit()">Login</button>
+        </div>
+      </form>
+      <div class="error-box" *ngIf="error.length">{{ error }}</div>
+    </div>
+
+  <div class="information">
+    <p>This can be seen by <b>all users</b></p>
+    <p *ngIf="canSeeUserText()">This can be seen by <b>verified users</b></p>
+    <p *ngIf="canSeeAdminText()">This can be seen only by <b>admins</b></p>
+  </div>
+</div>

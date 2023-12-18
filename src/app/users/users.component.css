@@ -1,0 +1,41 @@
+.container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 3.2rem 1.2rem 4.6rem;
+}
+
+.content {
+  display: flex;
+  flex-direction: column;
+}
+
+.title {
+  font-size: 1.8rem;
+  font-weight: bold;
+}
+
+.user {
+  padding: 0.5rem;
+  font-weight: bolder;
+}
+
+.user {
+  font-size: 1.2rem;
+}
+
+.role-badge {
+  border-radius: 8px;
+  padding: 0.3rem;
+  color: white;
+  margin: 0 0.25rem 0;
+}
+
+.role-user {
+  background-color: grey;
+}
+
+.role-admin {
+  background-color: orangered;
+}

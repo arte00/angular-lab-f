@@ -1,0 +1,20 @@
+.container {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+}
+
+.content {
+  padding: 4rem;
+}
+
+.subtitle {
+  font-size: 1.8rem;
+}
+
+.count {
+  font-size: 3.6rem;
+  font-weight: bold;
+  color: orangered;
+}
